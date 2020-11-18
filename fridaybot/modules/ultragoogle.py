@@ -150,7 +150,7 @@ async def _(event):
         img_size = img_size_div.find_all("div")
         end = datetime.now()
         ms = (end - start).seconds
-        OUTPUT_STR = """/protecc {prs_text}""".format(
+        OUTPUT_STR = """/protecc <a href="{the_location}">{prs_text}</a>""".format(
             **locals()
         )
     await event.edit(OUTPUT_STR, parse_mode="HTML", link_preview=False)
