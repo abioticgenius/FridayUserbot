@@ -55,6 +55,7 @@ async def _(event):
     await stark.edit("Google: {}\n{}".format(input_str, output_str), link_preview=False)
 
 
+    
 @friday.on(friday_on_cmd(pattern="image (.*)"))
 async def _(event):
     if event.fwd_from:
